@@ -98,6 +98,14 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #FBB448;
 }
 
+@media screen and (max-width: 600px) {
+  .gtco-container .about-pic img {
+    padding-bottom: 50px;
+    max-width:100%
+    height: auto;
+  }
+  }
+
 .gtco-container {
   max-width: 1100px;
   position: relative;
@@ -226,12 +234,17 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .gtco-nav ul li.btn-cta a {
-  color: #9ecc4b;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gtco-nav .btn-cta .active {
+  background: #fff !important;
+  color: #9ecc4b !important;
 }
 .gtco-nav ul li.btn-cta a span {
   border: 2px solid rgba(255, 255, 255, 0.5);
   padding: 4px 20px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7)
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -619,7 +632,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-contact-info {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   float: left;
   width: 100%;
   position: relative;
@@ -1134,7 +1147,13 @@ form label {
 }
 #gtco-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
 }
+
+#gtco-offcanvas .active { 
+  color: #9ecc4b  !important;
+ }
+ 
 #gtco-offcanvas a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1169,7 +1188,8 @@ form label {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
-  font-size: 20px;
+  font-size: 35px;
+  padding-top: 6px;
   color: rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1226,6 +1246,10 @@ form label {
 .gototop a:hover, .gototop a:active, .gototop a:focus {
   text-decoration: none;
   outline: none;
+}
+
+.gtco-nav .active {
+  color: #9ecc4b  !important;
 }
 
 .gtco-nav-toggle {
@@ -1837,11 +1861,11 @@ form label {
 .fh5co-card-item:hover, .fh5co-card-item:focus {
   bottom: 7px;
   text-decoration: none;
-  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+/*  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
   -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
   -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);*/
 }
 .fh5co-card-item:hover img, .fh5co-card-item:focus img {
   -webkot-transform: scale(1.2);
@@ -1854,7 +1878,7 @@ form label {
   opacity: 1;
   visibility: visible;
   bottom: 0px;
-  border: 2px solid #fcbe61 !important;
+/*  border: 2px solid #fcbe61 !important;*/
   background: #fcbe61 !important;
 }
 .fh5co-card-item:hover figure .overlay, .fh5co-card-item:focus figure .overlay {
@@ -2427,7 +2451,8 @@ form label {
 
 @media all and (max-width:900px) {
     .gridtable {
-        display: block
+        display: block;
+        padding-bottom: 50px;
     }
     .gridtable .gridrow {
         display: block
@@ -2508,5 +2533,61 @@ form label {
         margin-right: 2.5px
     }
 }
+
+/* Contact Page Image Grid */
+.image-grid {
+  overflow: auto;
+  text-align: center;
+}
+
+.image-grid div {
+  width: 350px;
+  height: 250px;
+  display: inline-block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 1px;
+  position: relative;
+}
+
+.image-grid div span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 5px;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+.image-grid div {
+  width: 96%;
+  padding-bottom: 67%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+    .contact-section {
+      padding-top: 6.25rem; } }
+
+  /* Center Footer Logo on Mobile */
+
+  @media screen and (max-width: 768px) {
+    .mbr-footer-content img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .mbr-footer-content  {
+text-align: center;
+    }
+  }
+
+
 
 /*# sourceMappingURL=style.css.map */

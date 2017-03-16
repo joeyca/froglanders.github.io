@@ -61,11 +61,13 @@ body {
 }
 
 a {
-  color: #ffdd93;
+  /*font-size: 20px;*/
+  color: #000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 a:hover, a:active, a:focus {
   color: #212121;
   outline: none;
@@ -161,8 +163,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-nav ul li a:hover, .gtco-nav ul li a:focus, .gtco-nav ul li a:active {
-  color: white;
+  color: white !important;
 }
+
+.gtco-nav .active {
+  color: #9ecc4b  !important;
+}
+
 .gtco-nav ul li.has-dropdown {
   position: relative;
 }
@@ -1127,6 +1134,11 @@ form label {
     display: block;
   }
 }
+
+#gtco-offcanvas .active { 
+  color: #9ecc4b  !important;
+ }
+ 
 .offcanvas #gtco-offcanvas {
   -moz-transform: translateX(0px);
   -webkit-transform: translateX(0px);
@@ -1136,6 +1148,7 @@ form label {
 }
 #gtco-offcanvas a {
   color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
 }
 #gtco-offcanvas a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -1171,7 +1184,8 @@ form label {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
-  font-size: 20px;
+  font-size: 35px;
+  padding-top: 6px;
   color: rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -2115,6 +2129,17 @@ form label {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .landing-hide {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .web-hide {
     visibility: hidden;
@@ -2334,7 +2359,7 @@ form label {
 }
 
 .gridtable .gridrow .gridcell-flavour-tub {
-    height: 510px;
+    height: 475px;
     background-color: #fff;
     background-position: center bottom
 }
@@ -2372,7 +2397,7 @@ form label {
 @media all and (max-width:900px) {
     .gridtable .gridrow .gridcell-flavour-tub {
         height: auto;
-        padding-bottom: 370px
+        padding-bottom: 400px;
     }
 }
 
@@ -2442,7 +2467,8 @@ form label {
 
 @media all and (max-width:900px) {
     .gridtable {
-        display: block
+        display: block;
+        padding-bottom: 50px;
     }
     .gridtable .gridrow {
         display: block
@@ -2796,6 +2822,12 @@ img {
     margin-top: -30px;
   }
 
+    @media screen and (max-width: 768px) {
+
+    .mbr-footer-content  {
+text-align: center;
+    }
+  }
 
 
 /*# sourceMappingURL=style.css.map */
