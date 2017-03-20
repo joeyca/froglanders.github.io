@@ -61,8 +61,13 @@ body {
 }
 
 a {
+<<<<<<< HEAD
   /*font-size: 20px;*/
   color: #000;
+=======
+  color: #000;
+  font-size: 20px;
+>>>>>>> viv-branch
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -306,7 +311,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 80px;
   line-height: 1.5;
   font-weight: 300;
-  font-family: "Kaushan Script", cursive !important;
+  font-family: "Lato", Arial, sans-serif !important;
 }
 @media screen and (max-width: 768px) {
   #gtco-header h1 {
@@ -330,7 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 #gtco-header .form-wrap h3 {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Lato", Arial, sans-serif;
 }
 #gtco-header .form-wrap .tab-menu {
   padding: 0 !important;
@@ -680,7 +685,7 @@ form label {
 }
 
 .cursive-font {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .primary-color {
@@ -2118,7 +2123,7 @@ form label {
     width: 40px; }
 
 /* Slider Gallery */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .mobile-hide {
     visibility: hidden;
     clear: both;
@@ -2129,7 +2134,7 @@ form label {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
   .landing-hide {
     visibility: hidden;
     clear: both;
@@ -2397,7 +2402,11 @@ form label {
 @media all and (max-width:900px) {
     .gridtable .gridrow .gridcell-flavour-tub {
         height: auto;
+<<<<<<< HEAD
         padding-bottom: 400px;
+=======
+        padding-bottom: 400px
+>>>>>>> viv-branch
     }
 }
 
